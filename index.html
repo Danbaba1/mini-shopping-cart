@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Shopping Cart</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" integrity=""
+        crossorigin="anonymous" />
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">Shopping Cart</a>
+
+        <div id="filter">
+            <div id="search-item">
+                <label for="search">Search products</label>
+                <input type="text" id="search" placeholder="e.g. jacket">
+            </div>
+
+
+            <div id="category-item">
+                <label for="category">Category</label>
+                <select id="category">
+                    <option value="All">All</option>
+                    <option value="Clothing">Clothing</option>
+                    <option value="Shoes">Shoes</option>
+                    <option value="Accessories">Accessories</option>
+                </select>
+            </div>
+        </div>
+
+
+        <div id="cart-icon">
+            <i class="ri-shopping-cart-2-line"></i>
+        </div>
+    </header>
+    <main id="container">
+        <section id="product-list"></section>
+        <aside id="shopping-cart">
+            <h1 id="cart-heading">Your Cart</h1>
+            <hr>
+            <section id="cart-details"></section>
+        </aside>
+    </main>
+</body>
+
+</html>
